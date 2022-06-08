@@ -604,7 +604,7 @@ int main() {
 
         //stone2
         model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(-0.3f, 2.82f, 1.7f));
+        model = glm::translate(model, glm::vec3(-0.3f, 2.82f, 1.63f));
         model = glm::rotate(model,glm::radians(180.0f),glm::vec3(0.0f,1.0f,0.0f));
         model = glm::scale(model, glm::vec3(0.14f));	// it's a bit too big for our scene, so scale it down
         objShader.setMat4("model", model);
