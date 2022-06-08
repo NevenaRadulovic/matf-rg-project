@@ -8,7 +8,11 @@
 #include <sstream>
 #include <iostream>
 
-
+void appendShaderFolderIfNotPresent(std::string& path) {
+    if (path.find("resources/shaders/") == std::string::npos) {
+        path = "resources/shaders/" + path;
+    }
+}
 class Shader
 {
 public:
@@ -19,6 +23,8 @@ public:
     {
         std::string vertexPathString(vertexPath);
         std::string fragmentPathString(fragmentPath);
+        appendShaderFolderIfNotPresent(vertexPathString);
+        appendShaderFolderIfNotPresent(fragmentPathString);
         vertexPath = vertexPathString.c_str();
         fragmentPath = fragmentPathString.c_str();
         // 1. retrieve the vertex/fragment source code from filePath

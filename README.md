@@ -1,11 +1,19 @@
-# project_base
-Prazan projekat sa pratećim bibliotekama koje koristimo na času. 
+# Projekat iz računarske grafike
 
-# Uputstvo
-1. `git clone https://github.com/matf-racunarska-grafika/project_base.git`
-2. CLion -> Open -> path/to/my/project_base
-3. Main se nalazi u src/main.cpp
-4. Cpp fajlovi idu u src folder
-5. Zaglavlja (h i hpp) fajlovi idu u include
-6. Šejderi idu u folder shaders. `Vertex shader` ima ekstenziju `.vs`, `fragment shader` ima ekstenziju `.fs`
-7. ALT+SHIFT+F10 -> project_base -> run
+# Kontrole
+1. `W` `A` `S` `D` - kretanje napred, nazad, levo i desno
+2. `space` - uključivanje/isključivanje hdr-a
+3. `B` - uključivanje/isključivanje bloom-a
+4. `F` - uključivanje/isključivanje lampe
+5. `X` `C` - smanjivanje/povećavanje exposure-a
+6. `esc` - zatvaranje prozora
+
+# Implementirane oblasti
+A - Cubemaps <br>
+B - HDR, Bloom<br>
+
+# Preuzeti kodovi
+- skelet preuzet sa https://github.com/matf-racunarska-grafika/project_base
+- water_blending.fs i water_dark.png preuzeto sa https://github.com/Dyslexoid/rg-moonlit-retreat.git
+
+
